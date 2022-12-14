@@ -16,8 +16,43 @@ startingTome.addTooltip(format.aqua("Craftable with all mod guides included"));
 mods.jei.JEI.addItem(startingTome);
 //recipes.addShapeless(startingTome, [<projecte:item.pe_covalence_dust:2>, oreDict.bookshelf]);
 
-//add way to process uranium with TE
+// add way to process uranium with TE
 mods.thermalexpansion.Pulverizer.addRecipe(<item:bigreactors:dustyellorium> * 2, <item:ic2:itemmisc:180>, 4000);
+
+// add ic2 energy producers (LV)
+recipes.remove(<energyconverters:energy_producer_eu:0>);
+recipes.addShaped(<energyconverters:energy_producer_eu:0>,
+													[[<minecraft:stone>, <ic2:itemcable:0>, <minecraft:stone>],
+													[<ic2:blockelectric:8>, <ic2:blockmachinelv:0>, <minecraft:gold_ingot>],
+													[<minecraft:stone>, <ic2:itemcable:0>, <minecraft:stone>]]);
+
+// add ic2 energy producers (MV)
+recipes.remove(<energyconverters:energy_producer_eu:1>);
+recipes.addShaped(<energyconverters:energy_producer_eu:1>,
+													[[<minecraft:stone>, <ic2:itemcable:0>, <minecraft:stone>],
+													[<ic2:blockelectric:9>, <ic2:blockmachinelv:0>, <minecraft:gold_ingot>],
+													[<minecraft:stone>, <ic2:itemcable:0>, <minecraft:stone>]]);
+
+// add ic2 energy producers (HV)
+recipes.remove(<energyconverters:energy_producer_eu:2>);
+recipes.addShaped(<energyconverters:energy_producer_eu:2>,
+													[[<minecraft:stone>, <ic2:itemcable:0>, <minecraft:stone>],
+													[<ic2:blockelectric:10>, <ic2:blockmachinelv:0>, <minecraft:gold_ingot>],
+													[<minecraft:stone>, <ic2:itemcable:0>, <minecraft:stone>]]);
+
+// add ic2 energy producers (EV)
+recipes.remove(<energyconverters:energy_producer_eu:3>);
+recipes.addShaped(<energyconverters:energy_producer_eu:3>,
+													[[<minecraft:stone>, <ic2:itemcable:0>, <minecraft:stone>],
+													[<ic2:blockelectric:11>, <ic2:blockmachinelv:0>, <minecraft:gold_ingot>],
+													[<minecraft:stone>, <ic2:itemcable:0>, <minecraft:stone>]]);
+
+// add ic2 energy producers (IV)
+recipes.remove(<energyconverters:energy_producer_eu:4>);
+recipes.addShaped(<energyconverters:energy_producer_eu:4>,
+													[[<minecraft:stone>, <ic2:itemcable:0>, <minecraft:stone>],
+													[<ic2:blockelectric:12>, <ic2:blockmachinelv:0>, <minecraft:gold_ingot>],
+													[<minecraft:stone>, <ic2:itemcable:0>, <minecraft:stone>]]);
 
 // Galacticraft Pre-Launch Checklist reasonable recipe
 recipes.removeShapeless(<galacticraftcore:prelaunch_checklist>);
